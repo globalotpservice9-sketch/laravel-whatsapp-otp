@@ -1,0 +1,23 @@
+{
+    "name": "5minutesapi/laravel-whatsapp-otp",
+    "description": "Official 5MinutesAPI SDK. Send WhatsApp OTPs & Alerts via Meta Cloud API with ZERO markup.",
+    "type": "library",
+    "keywords": ["whatsapp", "otp", "laravel", "api", "meta", "sms", "verification"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "5MinutesAPI",
+            "email": "support@5minutesapi.com",
+            "homepage": "https://5minutesapi.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FiveMinutesAPI\\WhatsApp\\": "src/"
+        }
+    }
+}
