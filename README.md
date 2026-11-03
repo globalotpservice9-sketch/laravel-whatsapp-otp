@@ -11,3 +11,15 @@ Get your **Official Meta API Key** in under 5 minutes at [5minutesapi.com](https
 ## Installation
 ```bash
 composer require 5minutesapi/laravel-whatsapp-otp
+Quick Start
+PHP
+require 'vendor/autoload.php';
+use FiveMinutesAPI\WhatsApp\WhatsAppClient;
+
+// 1. Initialize with your API Key from 5minutesapi.com
+$whatsapp = new WhatsAppClient("5m_live_YOUR_API_KEY");
+
+// 2. Send the OTP
+$response =$whatsapp->sendOTP("923001234567", "global_otp_auth", ["123456"]);
+
+print_r($response);
